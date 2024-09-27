@@ -1,1 +1,3 @@
 # React
+
+/${resData.info.cloudinaryImageId}

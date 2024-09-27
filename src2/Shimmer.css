@@ -1,0 +1,48 @@
+/* Shimmer.css */
+.shimmer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .shimmer-card {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .shimmer {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+    animation: shimmer-animation 1.5s infinite;
+    border-radius: 8px;
+  }
+  
+  @keyframes shimmer-animation {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    line-height: 100px;
+  }
+  
